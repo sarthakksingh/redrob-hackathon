@@ -57,6 +57,8 @@ Reasoning strings are generated from the same observed profile fields, so they s
 
 ## Demo / sandbox path
 
+Live demo: https://redrob-ai-recruiter-ranker.streamlit.app/
+
 The repo includes `streamlit_app.py`, a small-sample demo app that accepts a JSONL upload and runs the same scorer:
 
 ```powershell
@@ -64,7 +66,7 @@ pip install streamlit
 streamlit run streamlit_app.py
 ```
 
-For a hosted sandbox, deploy this repository to Streamlit Cloud or HuggingFace Spaces and set the app entry point to `streamlit_app.py`.
+The deployed Streamlit app is the hosted sandbox for reviewers. It runs on small uploaded JSONL samples using the same scoring code as the final submission.
 
 ## Repository layout
 
@@ -98,3 +100,5 @@ For a hosted sandbox, deploy this repository to Streamlit Cloud or HuggingFace S
 - The large `candidates.jsonl` file is intentionally not committed.
 - The submitted ranking is produced by code, not manual edits.
 - AI tools were used for implementation assistance, but the ranker itself does not call any LLM or hosted API.
+
+

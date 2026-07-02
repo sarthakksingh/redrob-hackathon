@@ -1,22 +1,22 @@
 ﻿# Redrob Hackathon - Submission Metadata
 
-team_name: "sarthakksingh"
+team_name: "AAA"
 
 primary_contact:
   name: "Sarthak Singh"
-  email: "update-before-submit@example.com"
-  phone: "+91-update-before-submit"
+  email: "sarthaksingh@gmail.com"
+  phone: "+91- 7992478749"
 
 team_members:
   - name: "Sarthak Singh"
-    email: "update-before-submit@example.com"
+    email: "sarthaksingh@gmail.com"
     role: "ML Engineer"
 
 github_repo: "https://github.com/sarthakksingh/redrob-hackathon"
 
 # Deploy streamlit_app.py to Streamlit Cloud / HuggingFace Spaces and paste the hosted URL here.
 # If a hosted sandbox is not ready, use the README demo instructions during portal entry.
-sandbox_link: "https://github.com/sarthakksingh/redrob-hackathon#demo--sandbox-path"
+sandbox_link: "https://redrob-ai-recruiter-ranker.streamlit.app/"
 
 reproduce_command: "python scripts/rank_candidates.py --candidates ./candidates.jsonl --out deliverables/redrob_submission.csv --xlsx deliverables/redrob_submission.xlsx"
 
@@ -53,3 +53,4 @@ declarations:
   no_collusion: true
   honeypot_check_done: true
   reproduction_tested: true
+
