@@ -1,0 +1,55 @@
+﻿# Redrob Hackathon - Submission Metadata
+
+team_name: "sarthakksingh"
+
+primary_contact:
+  name: "Sarthak Singh"
+  email: "update-before-submit@example.com"
+  phone: "+91-update-before-submit"
+
+team_members:
+  - name: "Sarthak Singh"
+    email: "update-before-submit@example.com"
+    role: "ML Engineer"
+
+github_repo: "https://github.com/sarthakksingh/redrob-hackathon"
+
+# Deploy streamlit_app.py to Streamlit Cloud / HuggingFace Spaces and paste the hosted URL here.
+# If a hosted sandbox is not ready, use the README demo instructions during portal entry.
+sandbox_link: "https://github.com/sarthakksingh/redrob-hackathon#demo--sandbox-path"
+
+reproduce_command: "python scripts/rank_candidates.py --candidates ./candidates.jsonl --out deliverables/redrob_submission.csv --xlsx deliverables/redrob_submission.xlsx"
+
+compute:
+  platform: "Local Windows laptop"
+  cpu_cores: 8
+  ram_gb: 16
+  python_version: "3.x"
+  os: "Windows"
+  uses_gpu_for_inference: false
+  has_network_during_ranking: false
+  pre_computation_required: false
+  pre_computation_time_minutes: 0
+
+ai_tools_used:
+  - "Codex"
+
+ai_usage_summary: |
+  Used Codex for architecture, code generation, debugging, README/deck drafting and validation workflow.
+  No candidate data is sent to any hosted LLM/API during ranking. The final ranker is deterministic,
+  CPU-only, and uses local candidate JSONL input.
+
+methodology_summary: |
+  Deterministic recruiter-style ranker for the Senior AI Engineer JD. It streams the 100K JSONL file,
+  extracts structured evidence from titles, career history, skills, logistics and Redrob behavioral
+  signals, then scores candidates using five components: career evidence, retrieval/ranking/evaluation,
+  production/product context, logistics, and engagement. Explicit penalties down-rank nontechnical
+  keyword-stuffers, service-only weak fits, inactive candidates and honeypot-like skill inconsistencies.
+  The final output is a top-100 CSV/XLSX with specific non-hallucinated reasoning for each candidate.
+
+declarations:
+  read_submission_spec: true
+  code_is_original_work: true
+  no_collusion: true
+  honeypot_check_done: true
+  reproduction_tested: true
